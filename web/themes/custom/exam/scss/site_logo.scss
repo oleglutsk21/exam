@@ -1,0 +1,20 @@
+.site-logo {
+  //width: 240px;
+  padding: 19px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #373645;
+
+}
+.site-logo .name.navbar-brand.site-logo__link {
+  margin: 0;
+  font-family: serif;
+  font-size: 32px;
+  color: #6e9bca;
+  padding-bottom: 10px;
+}
+
+.navbar-text.site-logo__text {
+  margin: 0 0 12px;
+}

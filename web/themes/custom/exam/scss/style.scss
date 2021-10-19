@@ -1,0 +1,28 @@
+
+$navbar-height: auto;
+
+@import "../bootstrap/assets/stylesheets/bootstrap";
+
+@import "page_header";
+@import "social_menu";
+@import "site_logo";
+
+
+
+
+.navbar-header .form-item {
+  margin-bottom: 0;
+  & .form-search {
+    border-radius: 0;
+  }
+}
+
+.news__date-create p:nth-child(1) {
+  color: #0c0d0e;
+}
+
+.news__date-create p:nth-child(2) {
+  color: #6e9bca;
+}
+
+

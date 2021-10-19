@@ -1,0 +1,21 @@
+
+$color_primary: #6e9bca;
+
+.social-media-links--platforms {
+  margin-bottom: 0;
+}
+
+.social-media-links--platforms.horizontal li {
+  padding: 0;
+  margin-right: 8px;
+}
+
+.social-media-links--platforms li span {
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: $color_primary;
+  padding: 3px;
+}
+
