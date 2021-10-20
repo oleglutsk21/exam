@@ -1,13 +1,25 @@
 
 $color_primary: #6e9bca;
 
-.social-media-links--platforms {
+.block-social-media-links .social-media-links--platforms {
   margin-bottom: 0;
+  @media (max-width: 1299px) {
+    width: max-content;
+    margin: 0 auto;
+  }
+  @media (max-width: 379px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
 }
 
 .social-media-links--platforms.horizontal li {
   padding: 0;
   margin-right: 8px;
+  @media (max-width: 379px) {
+    margin-bottom: 10px;
+  }
 }
 
 .social-media-links--platforms li span {

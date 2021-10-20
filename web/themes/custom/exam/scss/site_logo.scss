@@ -1,10 +1,14 @@
 .site-logo {
-  //width: 240px;
+  width: min-content;
   padding: 19px 21px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #373645;
+  @media (max-width: 991px) {
+    padding: 19px 0;
+  }
 
 }
 .site-logo .name.navbar-brand.site-logo__link {
@@ -13,6 +17,10 @@
   font-size: 32px;
   color: #6e9bca;
   padding-bottom: 10px;
+  @media (max-width: 449px) {
+    font-size: 28px;
+  }
+
 }
 
 .navbar-text.site-logo__text {

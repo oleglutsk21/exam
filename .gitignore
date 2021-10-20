@@ -22,4 +22,6 @@
 # Ignore .env files as they are personal
 /.env
 
+/.docksal
+
 /web/themes/custom/exam/node_modules

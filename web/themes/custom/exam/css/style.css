@@ -6735,7 +6735,7 @@ button.close {
 
 .navbar-header {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 39px;
   background-color: #ffffff;
   display: grid;
   grid-template-areas: "logo menu social search";
@@ -6746,6 +6746,7 @@ button.close {
 
 .site-logo {
   grid-area: logo;
+  align-self: stretch;
 }
 
 .navbar-collapse {
@@ -6806,7 +6807,11 @@ button.close {
   font-size: 0;
 }
 
-.social-media-links--platforms {
+.navbar-toggle {
+  grid-area: menu-button;
+}
+
+.block-social-media-links .social-media-links--platforms {
   margin-bottom: 0;
 }
 
@@ -6825,6 +6830,9 @@ button.close {
 }
 
 .site-logo {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   padding: 19px 21px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6833,6 +6841,9 @@ button.close {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -7940,6 +7951,54 @@ button.close {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  .navbar-collapse.collapse {
+    padding: 20px 5px;
+  }
+
+  .block-social-media-links {
+    padding: 20px 0 10px;
+  }
+
+  .search-block-form {
+    padding: 20px 0 10px;
+  }
+
+  .menu--main {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .menu.menu--main li a.active-trail.is-active:after {
+    top: 40px;
+  }
+
+  .block-social-media-links .social-media-links--platforms {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .search-block-form {
+    margin-right: 15px;
+  }
+
+  .menu--main li {
+    margin-right: 10px;
+  }
+
+  .menu--main li:first-child {
+    margin-right: 10px;
+  }
+
+  .site-logo {
+    padding: 19px 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -8115,6 +8174,99 @@ button.close {
 
   .hidden-xs {
     display: none !important;
+  }
+
+  .navbar-header {
+    grid-template-areas: "logo social search menu-button" "menu menu menu menu";
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: auto;
+  }
+
+  .navbar-collapse.collapse {
+    padding: 20px 15px;
+  }
+
+  .block-social-media-links {
+    padding: 0;
+  }
+
+  .search-block-form {
+    margin-right: 0px;
+    padding: 0;
+  }
+
+  .menu--main {
+    width: auto;
+    margin: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .navbar-header {
+    grid-template-areas: "logo social social menu-button" "search search search search" "menu menu menu menu";
+  }
+
+  .search-block-form {
+    padding: 15px;
+    border-top: solid 1px #e7e7e7;
+  }
+
+  .menu--main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .menu.menu--main li a.active-trail.is-active:after {
+    top: 22px;
+    height: 3px;
+  }
+
+  .menu.menu--main .menu-icon-2 a.active-trail.is-active:after {
+    top: 30px;
+    height: 3px;
+  }
+
+  .menu--main li {
+    margin: 0 0 15px;
+  }
+
+  .menu--main li:first-child {
+    margin: 0 0 15px;
+  }
+
+  .navbar-toggle {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 449px) {
+  .site-logo .name.navbar-brand.site-logo__link {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 379px) {
+  .block-social-media-links .social-media-links--platforms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .social-media-links--platforms.horizontal li {
+    margin-bottom: 10px;
   }
 }
 
