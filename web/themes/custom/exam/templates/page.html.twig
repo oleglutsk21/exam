@@ -62,7 +62,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header class="header" {{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
       <div class="{{ container }}">
       {% endif %}
@@ -105,7 +105,7 @@
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div role="main" class="main-container js-quickedit-main-content">
     <div class="row">
 
       {# Sidebar First #}
@@ -163,8 +163,10 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+    <footer class="footer" role="contentinfo">
+      <div class="container">
       {{ page.footer }}
+      </div>
     </footer>
   {% endblock %}
 {% endif %}
