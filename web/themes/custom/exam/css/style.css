@@ -6931,7 +6931,7 @@ button.close {
 .block-title {
   position: relative;
   margin-top: 100px;
-  margin-bottom: 96px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -6956,6 +6956,10 @@ button.close {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #cccccc;
+}
+
+.block__inner {
+  padding-top: 69px;
 }
 
 .services__items .view-content {
@@ -6990,6 +6994,89 @@ button.close {
 }
 
 .services__item-text {
+  margin-bottom: 27px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #cccccc;
+}
+
+.block-views-blockprojects-views-block-1 .block-title {
+  font-weight: normal;
+}
+
+.block-views-blockprojects-views-block-1 .block__inner {
+  background: -o-repeating-linear-gradient(135deg, #fff 1px 5px, #dbdbdb 7px 0px);
+  background: repeating-linear-gradient(-45deg, #fff 1px 5px, #dbdbdb 7px 0px);
+}
+
+.projects__items .view-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__items .pagination > li > a {
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+  color: black;
+}
+
+.projects__items .pager__item.is-active.active a {
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.projects__item {
+  padding-bottom: 10px;
+  width: 23.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: solid 1px;
+}
+
+.projects__item-title {
+  margin-top: 36px;
+  margin-bottom: 2px;
+}
+
+.projects__item-category {
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+
+.projects__item-category div[about="/web-development"] {
+  color: #1bbc9b;
+}
+
+.projects__item-category div[about="/php-development"] {
+  color: #9b58b5;
+}
+
+.projects__item-category div[about="/app-development"] {
+  color: #e84c3d;
+}
+
+.projects__item-category div[about="/drupal-project"] {
+  color: #2face1;
+}
+
+.projects__item-text {
   margin-bottom: 27px;
   font-size: 12px;
   line-height: 14px;
@@ -8080,7 +8167,7 @@ button.close {
 
 @media (max-width: 1299px) {
   .navbar-header {
-    grid-template-areas: "logo social search search" "logo menu menu menu";
+    grid-template-areas: "logo social search search" "logo menu menu menu";
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -8123,6 +8210,10 @@ button.close {
   .services__item-title {
     font-size: 20px;
   }
+
+  .projects__item-title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -8148,6 +8239,11 @@ button.close {
   }
 
   .services__item {
+    width: 48%;
+    margin-bottom: 50px;
+  }
+
+  .projects__item {
     width: 48%;
     margin-bottom: 50px;
   }
@@ -8329,7 +8425,7 @@ button.close {
   }
 
   .navbar-header {
-    grid-template-areas: "logo social search menu-button" "menu menu menu menu";
+    grid-template-areas: "logo social search menu-button" "menu menu menu menu";
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -8383,7 +8479,7 @@ button.close {
 
 @media (max-width: 599px) {
   .navbar-header {
-    grid-template-areas: "logo social social menu-button" "search search search search" "menu menu menu menu";
+    grid-template-areas: "logo social social menu-button" "search search search search" "menu menu menu menu";
   }
 
   .search-block-form {
@@ -8443,6 +8539,18 @@ button.close {
   .services__item {
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .projects__item {
+    width: 100%;
+    margin-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
