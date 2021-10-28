@@ -1,0 +1,29 @@
+uuid: 8c93fa4c-01b8-4ed4-8c66-d88f8ac54ee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employee_position
+    - node.type.our_team
+    - taxonomy.vocabulary.employee_position
+id: node.our_team.field_employee_position
+field_name: field_employee_position
+entity_type: node
+bundle: our_team
+label: 'Employee position'
+description: 'Employee position in the company'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      employee_position: employee_position
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: c28023a2-e981-4711-8300-567fc5f4f93b
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_alias
+label: 'User alias'
+type: 'canonical_entities:user'
+pattern: '/user/[user:account-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

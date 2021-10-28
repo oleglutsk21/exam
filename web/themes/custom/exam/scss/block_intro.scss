@@ -1,8 +1,8 @@
-
+@import "custom_variables";
 #block-homepageheaderintro {
-  padding-top: 130px;
-  padding-left: 114px;
-  padding-bottom: 264px;
+  padding-top: 124px;
+  padding-left: 120px;
+  padding-bottom: 269px;
   @media (max-width: 1299px) {
     padding-bottom: 247px;
   }
@@ -10,19 +10,18 @@
     padding-bottom: 130px;
   }
   @media (max-width: 599px) {
-    padding-top: 155px;
+    padding-top: 35px;
     padding-left: 0;
     padding-bottom: 100px;
     text-align: center;
   }
   @media (max-width: 420px) {
-    padding-top: 80px;
     padding-bottom: 80px;
   }
 
   & h1 {
     font-size: 68px;
-    color: white;
+    color: $color-white;
     font-weight: 100;
     margin-bottom: 0;
     line-height: 59px;
@@ -50,7 +49,7 @@
   & p {
     width: 360px;
     margin: 0;
-    color: #6f9ccb;
+    color: $brand-primary;
     line-height: 17px;
     font-size: 14px;
     letter-spacing: -0.486px;

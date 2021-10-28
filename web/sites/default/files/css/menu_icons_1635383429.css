@@ -1,0 +1,17 @@
+
+
+/* THEME DEBUG */
+/* THEME HOOK: 'simple_menu_icons_css_item' */
+/* BEGIN OUTPUT from 'modules/contrib/simple_menu_icons/templates/simple-menu-icons-css-item.html.twig' */
+
+    a.menu-icon-2,
+    ul.links li.menu-icon-2 a,
+    ul.menu li.menu-icon-2 a {
+        background-image: url(/sites/default/files/menu_icons/Homepage-menu_0.png);
+        padding-left:28px;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+/* END OUTPUT from 'modules/contrib/simple_menu_icons/templates/simple-menu-icons-css-item.html.twig' */
+

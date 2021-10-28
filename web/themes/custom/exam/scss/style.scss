@@ -1,8 +1,5 @@
-
-$navbar-height: auto;
-
+@import "custom_variables";
 @import "../bootstrap/assets/stylesheets/bootstrap";
-
 @import "page_header";
 @import "social_menu";
 @import "site_logo";
@@ -11,22 +8,14 @@ $navbar-height: auto;
 @import "block-views-global";
 @import "services-views-block";
 @import "projects-views-block";
+@import "our-team-views-block";
+@import "news-views-block";
+@import "clients-views-block";
+@import "contacts_block";
+@import "page_footer"
 
 
 
-.navbar-header .form-item {
-  margin-bottom: 0;
-  & .form-search {
-    border-radius: 0;
-  }
-}
 
-.news__date-create p:nth-child(1) {
-  color: #0c0d0e;
-}
-
-.news__date-create p:nth-child(2) {
-  color: #6e9bca;
-}
 
 

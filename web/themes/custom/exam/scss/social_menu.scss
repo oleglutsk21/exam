@@ -1,18 +1,4 @@
-
-$color_primary: #6e9bca;
-
-.block-social-media-links .social-media-links--platforms {
-  margin-bottom: 0;
-  @media (max-width: 1299px) {
-    width: max-content;
-    margin: 0 auto;
-  }
-  @media (max-width: 379px) {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-}
+@import "custom_variables";
 
 .social-media-links--platforms.horizontal li {
   padding: 0;
@@ -20,14 +6,19 @@ $color_primary: #6e9bca;
   @media (max-width: 379px) {
     margin-bottom: 10px;
   }
+  &:last-child {
+    margin-right: 0;
+    @media (max-width: 379px) {
+      margin-right: 8px;
+    }
+  }
 }
 
 .social-media-links--platforms li span {
   font-size: 20px;
   width: 25px;
   height: 25px;
-  color: white;
-  background-color: $color_primary;
+  color: $color-white;
+  background-color: $brand-primary;
   padding: 3px;
 }
-

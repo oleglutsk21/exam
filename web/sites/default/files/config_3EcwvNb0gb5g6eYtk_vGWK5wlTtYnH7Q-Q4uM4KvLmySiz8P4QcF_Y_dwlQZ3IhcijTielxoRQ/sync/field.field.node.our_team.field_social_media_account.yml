@@ -1,0 +1,119 @@
+uuid: c78eb1f3-71f8-45fe-a68d-f485893e4dbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_media_account
+    - node.type.our_team
+  module:
+    - social_media_links_field
+id: node.our_team.field_social_media_account
+field_name: field_social_media_account
+entity_type: node
+bundle: our_team
+label: 'Social media account'
+description: 'Employee accounts in social networks'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  iconset: 'fontawesome:2x'
+  platforms:
+    facebook:
+      description: ''
+      weight: '-34'
+      enabled: 0
+    twitter:
+      description: ''
+      weight: '-33'
+      enabled: 0
+    linkedin:
+      description: ''
+      weight: '-32'
+      enabled: 0
+    behance:
+      description: ''
+      weight: '-31'
+      enabled: 0
+    bitbucket:
+      description: ''
+      weight: '-30'
+      enabled: 0
+    contact:
+      description: ''
+      weight: '-29'
+      enabled: 0
+    drupal:
+      description: ''
+      weight: '-28'
+      enabled: 0
+    email:
+      description: ''
+      weight: '-27'
+      enabled: 0
+    flickr:
+      description: ''
+      weight: '-26'
+      enabled: 0
+    github:
+      description: ''
+      weight: '-25'
+      enabled: 0
+    gitlab:
+      description: ''
+      weight: '-24'
+      enabled: 0
+    googleplus:
+      description: ''
+      weight: '-23'
+      enabled: 0
+    instagram:
+      description: ''
+      weight: '-22'
+      enabled: 0
+    pinterest:
+      description: ''
+      weight: '-21'
+      enabled: 0
+    rss:
+      description: ''
+      weight: '-20'
+      enabled: 0
+    slideshare:
+      description: ''
+      weight: '-19'
+      enabled: 0
+    tumblr:
+      description: ''
+      weight: '-18'
+      enabled: 0
+    vimeo:
+      description: ''
+      weight: '-17'
+      enabled: 0
+    vkontakte:
+      description: ''
+      weight: '-16'
+      enabled: 0
+    website:
+      description: ''
+      weight: '-15'
+      enabled: 0
+    whatsapp:
+      description: ''
+      weight: '-14'
+      enabled: 0
+    xing:
+      description: ''
+      weight: '-13'
+      enabled: 0
+    youtube:
+      description: ''
+      weight: '-12'
+      enabled: 0
+    youtube_channel:
+      description: ''
+      weight: '-11'
+      enabled: 0
+field_type: social_media_links_field

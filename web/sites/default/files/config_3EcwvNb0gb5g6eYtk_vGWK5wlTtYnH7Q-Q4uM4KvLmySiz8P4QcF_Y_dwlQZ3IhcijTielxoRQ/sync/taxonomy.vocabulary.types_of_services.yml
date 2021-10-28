@@ -1,0 +1,8 @@
+uuid: 7dd7e03c-6b85-4483-be5e-445085961345
+langcode: en
+status: true
+dependencies: {  }
+name: 'Types of services'
+vid: types_of_services
+description: 'Types of services'
+weight: 0

@@ -1,0 +1,24 @@
+uuid: c2537fc2-5dd2-4d1c-a89c-b87d01703795
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_term_alias
+label: 'Taxonomy term alias'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  0a22440e-c3e1-4d13-9ce9-0e4b1f6d22aa:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      employee_position: employee_position
+      types_of_services: types_of_services
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 0a22440e-c3e1-4d13-9ce9-0e4b1f6d22aa
+selection_logic: and
+weight: -5
+relationships: {  }

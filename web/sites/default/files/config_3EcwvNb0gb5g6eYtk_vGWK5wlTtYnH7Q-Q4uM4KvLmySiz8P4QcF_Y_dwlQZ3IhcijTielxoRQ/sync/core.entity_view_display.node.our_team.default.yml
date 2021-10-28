@@ -1,0 +1,64 @@
+uuid: d70a7469-e5e9-4c71-b2fc-8dc04de786bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_team.body
+    - field.field.node.our_team.field_employee_position
+    - field.field.node.our_team.field_image
+    - field.field.node.our_team.field_social_media_account
+    - node.type.our_team
+  module:
+    - image
+    - social_media_links_field
+    - text
+    - user
+id: node.our_team.default
+targetEntityType: node
+bundle: our_team
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_employee_position:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_social_media_account:
+    weight: 3
+    label: hidden
+    settings:
+      appearance:
+        orientation: h
+        show_name: 0
+      link_attributes:
+        target: '<none>'
+        rel: '<none>'
+    third_party_settings: {  }
+    type: social_media_links_field_default
+    region: content
+  flag_like:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true

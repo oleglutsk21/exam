@@ -1,0 +1,14 @@
+uuid: 3efef148-3c8c-453b-bee9-e95504dc7eea
+name: Quarantie
+mail: admin@quarantie
+slogan: 'Sofware Development'
+page:
+  403: /page-403
+  404: /page-404
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

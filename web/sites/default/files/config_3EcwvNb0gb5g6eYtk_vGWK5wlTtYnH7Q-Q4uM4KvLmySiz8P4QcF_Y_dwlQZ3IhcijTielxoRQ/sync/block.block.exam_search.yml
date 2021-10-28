@@ -1,0 +1,23 @@
+uuid: 8b92685e-4210-4923-b202-be5e9d8450a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - exam
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: exam_search
+theme: exam
+region: navigation
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

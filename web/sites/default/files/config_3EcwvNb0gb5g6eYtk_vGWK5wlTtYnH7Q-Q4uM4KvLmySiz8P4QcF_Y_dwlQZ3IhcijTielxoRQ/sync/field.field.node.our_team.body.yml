@@ -1,0 +1,23 @@
+uuid: 2d1fa3af-ff33-4669-aff1-571d927d2067
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.our_team
+  module:
+    - text
+id: node.our_team.body
+field_name: body
+entity_type: node
+bundle: our_team
+label: 'About the employee'
+description: 'Employee information'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

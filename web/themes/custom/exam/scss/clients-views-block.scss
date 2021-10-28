@@ -1,0 +1,13 @@
+.block-views-blockclients-views-block-1 {
+  & .block-title {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  & .block__inner {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    @media (max-width: 767px) {
+      padding-bottom: 80px;
+    }
+  }
+}

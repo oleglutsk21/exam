@@ -1,0 +1,22 @@
+uuid: f24ac105-9dd7-4aa3-9fb1-d59b6c10279b
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - exam
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: exam_help
+theme: exam
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

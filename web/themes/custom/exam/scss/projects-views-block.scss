@@ -1,78 +1,119 @@
-.block-views-blockprojects-views-block-1 {
-    & .block-title {
-        font-weight: normal;
-    }
-    & .block__inner {
-    background: 
-    repeating-linear-gradient(-45deg, #fff 1px 5px, #dbdbdb 7px 0px);
-    }
-}
- 
+@import "custom_variables";
 
-.projects__items {
+.block-views-blockprojects-views-block-1 {
+  & .block-title {
+    font-weight: normal;
+  }
+
+  & .block__inner {
+    background:
+      repeating-linear-gradient(-45deg, #fff 1px 5px, #dbdbdb 7px 0px);
+  }
+
+  & .projects__items {
     & .view-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    & .pagination {
+      &.js-pager__items {
+        margin: 38px 0;
+        padding-bottom: 110px;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    & .pagination > li > a {
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1299px) {
+          padding-bottom: 20px;
+        }
+
+        @media (max-width: 767px) {
+          margin: 0 0 38px;
+        }
+      }
+
+      &>li>a {
+        color: $color-black;
         background-color: transparent;
-    border: 0;
-    font-size: 16px;
-    color: black;
+        border: 0;
+      }
+
+      & .pager__item {
+        &.is-active.active a {
+          background-color: #dddcdd;
+          border-radius: 50%;
+        }
+
+        &--first,
+        &--previous,
+        &--next,
+        &--last {
+          & a {
+            padding-top: 3px;
+            font-size: 24px;
+          }
+        }
+      }
     }
-    & .pager__item.is-active.active a {
-        background-color: gray;
-        border-radius: 50%;
-    }
-}
-  
-  .projects__item {
+  }
+
+  & .projects__item {
     padding-bottom: 10px;
     width: 23.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff;
-    border-bottom: solid 1px;
+    background-color: $color-white;
+    border-bottom: solid 1px $color-black;
+
     @media (max-width: 991px) {
       width: 48%;
       margin-bottom: 50px;
     }
+
     @media (max-width: 459px) {
       width: 100%;
       margin-bottom: 50px;
       flex-direction: column;
       align-items: center;
     }
+
     &-title {
       margin-top: 36px;
       margin-bottom: 2px;
+
       @media (max-width: 1299px) {
         font-size: 20px;
       }
     }
+
     &-category {
-        font-size: 16px;
-        margin-bottom: 17px;
-        & div[about="/web-development"] {
-            color: #1bbc9b;
-        }
-        & div[about="/php-development"] {
-            color: #9b58b5;
-        }
-        & div[about="/app-development"] {
-            color: #e84c3d;
-        }
-        & div[about="/drupal-project"] {
-            color: #2face1;
-        }
+      font-size: 16px;
+      margin-bottom: 17px;
+
+      & div[about="/web-development"] {
+        color: #1bbc9b;
+      }
+
+      & div[about="/php-development"] {
+        color: #9b58b5;
+      }
+
+      & div[about="/app-development"] {
+        color: #e84c3d;
+      }
+
+      & div[about="/drupal-project"] {
+        color: #2face1;
+      }
     }
-    &-text {
-      margin-bottom: 27px;
-      font-size: 12px;
-      line-height: 14px;
-      color: #cccccc;
+
+    &-link {
+      border: none;
+      border-radius: 0;
     }
   }
+}

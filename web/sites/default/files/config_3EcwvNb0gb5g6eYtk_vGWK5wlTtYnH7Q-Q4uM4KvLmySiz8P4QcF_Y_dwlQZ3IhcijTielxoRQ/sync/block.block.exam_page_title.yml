@@ -1,0 +1,20 @@
+uuid: a2d6cd1c-1f9e-4aaa-b3ee-0f273d5160dc
+langcode: en
+status: false
+dependencies:
+  theme:
+    - exam
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: exam_page_title
+theme: exam
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

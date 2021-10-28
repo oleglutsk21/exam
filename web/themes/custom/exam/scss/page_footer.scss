@@ -1,0 +1,30 @@
+.footer {
+  background-color: #373645;
+
+  & .region.region-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .site-logo {
+      padding: 63px 0;
+      align-items: start;
+
+      @media (max-width: 767px) {
+        padding: 20px 0;
+      }
+    }
+
+    & .block-social-media-links {
+      & .social-media-links--platforms {
+        display: flex;
+        margin-bottom: 0;
+
+        & li {
+          margin-right: 12px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

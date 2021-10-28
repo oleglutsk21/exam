@@ -1,0 +1,29 @@
+uuid: b1dbe7b3-2b4c-46d8-9f8f-fb48f6291109
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services_views
+  module:
+    - system
+    - views
+  theme:
+    - exam
+id: views_block__services_views_block_1
+theme: exam
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:services_views-block_1'
+settings:
+  id: 'views_block:services_views-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /home
+    negate: false
